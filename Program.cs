@@ -31,7 +31,11 @@ namespace picacomic
             }
             using (StreamWriter sw = new StreamWriter("README.md", true))
             {
-                sw.WriteLine("\r\n" + DateTime.Now.ToString("HH:mm:ss") + "\r\n");
+                  for (int i = 0; i < 3; i++)
+                {
+                  sw.WriteLine("\r\n" + DateTime.Now.ToString("HH:mm:ss") + "\r\n");
+                }
+                
             }
             using (StreamReader sr = new StreamReader(@"README.md"))
             {
